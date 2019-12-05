@@ -41,8 +41,8 @@ function handleClick(e) {
 	var y =  Math.floor(e.offsetY / boxSize); // y index of grid box
 	grid[x][y]=1;//get grid box number
 	ctx.fillRect(x * boxSize, y * boxSize, boxSize, boxSize);
-	console.log("("+x+","+y+")");
-	console.log("BoxSize"+boxSize);
+//	console.log("("+x+","+y+")");
+//	console.log("BoxSize"+boxSize);
 }
 
 
@@ -103,23 +103,7 @@ function update() {
 	$('#gen').html(GEN);
 }
 
-function isEqual(a,b) 
-{ 
-  // if length is not equal 
-  if(a.length!=b.length) 
-  	return 0; 
-  else{ 
-  // comapring each element of array 
-  for(var i=0;i<a.length;i++){
-  	for(var j=0;j<b.length;j++){
-  		if(a[i][j]!=b[i][j]){
-  			return 0;
-  		}
-  	}
-  } 
-}
-return 1; 
-} 
+
 
 
 function render(grid) {
